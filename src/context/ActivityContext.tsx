@@ -13,7 +13,6 @@ type ActivityContextProps = {
 export const ActivityContext = createContext<ActivityContextProps>({} as ActivityContextProps)
 
 
-
 export const ActivityProvider = ({children}: ActivityProviderProps) => {
 
    const [state, dispatch] = useReducer(activityReducer, initialState)
